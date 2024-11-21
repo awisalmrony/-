@@ -1,0 +1,16 @@
+header {
+  background-color: #3498db;
+  color: #2eb2aba7;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#toggle-sidebar-btn {
+  background: none;
+  border: none;
+  color: #f0f5f5;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,220 @@
+/* التنسيق الأساسي للصفحة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 1;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* تنسيق الصورة الشخصية */
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+.profile-photo img {
+  width: 170px;
+  height: 170px;
+  border-radius: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* النص التعريفي */
+.profile-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.profile-text h1 {
+  font-size: 2.5em;
+  margin: 5px 0;
+  color: #333;
+}
+
+.profile-text p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* أزرار الاتصال والسيرة الذاتية */
+.btn-group {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-group .btn {
+  background-color: #3498db; /* لون الخلفية الأساسي */
+  color: #ffffff; /* لون النص */
+  padding: 12px 24px; /* مسافة حول النص */
+  font-size: 16px; /* حجم الخط */
+  border: none; /* إزالة الحدود */
+  border-radius: 8px; /* حواف مستديرة */
+  cursor: pointer; /* إضافة مؤشر اليد */
+  transition: all 0.3s ease; /* تأثير الانتقال */
+  text-decoration: none; /* إزالة التسطير */
+}
+
+.btn-group .btn:hover {
+  background-color: #005bb5;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social a {
+  color: #0073e6;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #005bb5;
+}
+
+/* تنسيق قسم About */
+.about-area {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h4 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+.about-content ul {
+  padding: 0;
+  list-style: none;
+  color: #555;
+}
+
+.about-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* تنسيق قسم Education & Internship */
+.education-content, .project-content, .contact-content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education .title, .internship .title {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-box .timeline-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.timeline-box .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0073e6;
+  border-radius: 50%;
+}
+
+.timeline-title {
+  font-size: 1.2em;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* تنسيق قسم المشاريع */
+.project-title h4 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.profile-photoo img {
+ 
+  width: 100%; /* يجعل عرض الصورة يتطابق مع عرض عنصر المشروع */
+  max-height: 150px; /* يحدد أقصى ارتفاع للصورة ليظهر الشكل مستطيلاً */
+  border-radius: 8px; /* يجعل حدود الصورة مستديرة مثل حدود المشروع */
+  object-fit: contain; /* يضمن عرض الصورة بالكامل داخل الإطار */
+  display: block;
+  margin: 0 auto;
+ 
+}
+
+.project i {
+  font-size: 2em;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+/* تنسيق قسم الاتصال */
+.contact-content {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form .submit {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact form .submit:hover {
+  background-color: #005bb5;
+}

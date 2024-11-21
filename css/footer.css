@@ -1,0 +1,15 @@
+footer {
+    background-color: #3498db;
+    color: #3498db;
+    padding: 10px;
+    text-align: center;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.p{
+   
+    color: #fff;
+}
